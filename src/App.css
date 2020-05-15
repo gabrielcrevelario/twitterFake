@@ -1,0 +1,496 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+h3 {
+  color: #091b2f;
+}
+
+p {
+  color: #091b2f;
+}
+
+body {
+  background: #e4e4e4;
+}
+body header {
+  width: 100%;
+  height: 340px;
+  position: relative;
+}
+body header .banner {
+  width: 100%;
+  height: 100%;
+}
+body header .banner .changeBanner {
+  position: absolute;
+  right: 26%;
+  top: 14%;
+  width: 40px;
+  height: 40px;
+  transform: translate(-14%, -26%);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+  width: 170px;
+  background: #0000009c;
+  padding: 5px;
+  border: solid 1px white;
+  align-items: center;
+}
+body header .banner .changeBanner input[type=file] {
+  display:none;
+}
+body header .banner .changeBanner label {
+  cursor: pointer;
+  color: white;
+}
+body header .banner .changeBanner span {
+  color: #c7c7c7;
+  transform: scale(1.0);
+  transition: all 500ms ease-in-out;
+}
+
+body header .banner .imgBanner {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+body header .perfilPhoto {
+  width: 188px;
+  height: 188px;
+  position: absolute;
+  top: 60%;
+  left: 24%;
+  transform: translateX(-15%);
+}
+
+
+body header  .boxProfile {
+  width: 131px;
+  height: 37px;
+  position: absolute;
+  top: 49%;
+  left: 27%;
+  -ms-transform: translateX(-15%);
+  transform: translateX(-15%);
+  z-index: 3;
+  color: white;
+  background: #000000c7;
+  border: solid 1px white;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  
+} 
+body header  .boxProfile label {
+  color: white;
+}
+body header  .boxProfile input {
+  display: none;
+}
+
+
+
+body header .perfilPhoto .changePerfilButton {
+  height: 30px;
+  position: absolute;
+  width: 64%;
+  display: flex;
+  justify-content: center;
+  top: -12%;
+  transform: translateY(12%);
+}
+body header .perfilPhoto .changePerfilButton button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border-color: transparent;
+  background: #e44d3a;
+  font-size: 26px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
+}
+body header .perfilPhoto .changePerfilButton button span {
+  color: white;
+  font-size: 20px;
+  transition: all 500ms ease-in-out;
+}
+body header .perfilPhoto .changePerfilButton button span:hover {
+  font-size: 24px;
+  transition: all 500ms ease-in-out;
+}
+body header .perfilPhoto .photo {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  border-radius: 50%;
+  border: white solid 5px;
+}
+body main {
+  display: flex;
+  justify-content: center;
+}
+body main .wrapper {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+}
+body main .wrapper .block1 {
+  flex: 1;
+}
+body main .wrapper .block1 .listItems {
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+}
+body main .wrapper .block1 .listItems .containerList {
+  width: 100%;
+  background: white;
+  box-shadow: 1px 2px 4px #d0cece;
+}
+body main .wrapper .block1 .listItems .containerList ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body main .wrapper .block1 .listItems .containerList ul li {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+  min-height: 53px;
+  width: 90%;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+body main .wrapper .block1 .listItems .containerList ul li .item {
+  cursor: pointer;
+  min-width: 58%;
+  height: 73%;
+  padding: 8px 10px;
+  color: #091b2f;
+  transition: all ease-in-out 300ms;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+body main .wrapper .block1 .listItems .containerList ul li .item .spanItem {
+  display: inline-block;
+  width: 86px;
+}
+body main .wrapper .block1 .listItems .containerList ul li .item:hover {
+  background: #e44d3a33;
+  border-radius: 15px;
+  color: #e04b38;
+  transition: all ease-in-out 300ms;
+}
+body main .wrapper .block1 .followAndfollowers {
+  display: flex;
+  min-height: 160px;
+  justify-content: flex-end;
+  background: white;
+  box-shadow: 1px 2px 4px #d0cece;
+  flex-direction: column;
+  align-items: center;
+}
+body main .wrapper .block1 .followAndfollowers .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 2px;
+}
+body main .wrapper .block1 .followAndfollowers .title h1 {
+  font-size: 18px;
+}
+body main .wrapper .block1 .followAndfollowers > .item {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+}
+body main .wrapper .block1 .followAndfollowers h3 {
+  font-weight: 200;
+  color: #565555;
+  flex: 1;
+  font-size: 13pt;
+}
+body main .wrapper .block1 .followAndfollowers h4 {
+  font-weight: 800;
+  flex: 1;
+  font-size: 13pt;
+}
+body main .wrapper .block1 .followAndfollowers .following {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 9px 1px;
+  flex: 1;
+}
+body main .wrapper .block1 .followAndfollowers .followers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 9px 1px;
+  flex: 1;
+}
+body main .wrapper .block1 .followAndfollowers .listItems {
+  min-height: 151px;
+  display: flex;
+  align-items: center;
+}
+body main .wrapper .block1 .followAndfollowers .listItems ul {
+  list-style: none;
+}
+body main .wrapper .block1 .followAndfollowers .listItems ul li {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 12px;
+}
+body main .wrapper .block1 .relevants .relevantPeopleList {
+  background: white;
+  box-shadow: 1px 2px 4px #d0cece;
+}
+body main .wrapper .block1 .relevants .relevantPeopleList .headPeople {
+  padding: 11px;
+  border-bottom: #e4e4e4 1px solid;
+  width: 203px;
+}
+body main .wrapper .block1 .relevants .relevantPeopleList .headPeople h2 {
+  font-size: 14pt;
+}
+body main .wrapper .block1 .relevants .relevantPeopleList .people .titlePostAndFollow {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+body main .wrapper .block1 .relevants .relevantPeopleList .people .titlePostAndFollow .titlePeople {
+  padding: 13px 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 62px;
+}
+body main .wrapper .block1 .relevants .relevantPeopleList .people .titlePostAndFollow .titlePeople h3 {
+  font-size: 14px;
+}
+body main .wrapper .block1 .relevants .relevantPeopleList .people .titlePostAndFollow .titlePeople span {
+  font-size: 14px;
+  color: gray;
+}
+body main .wrapper .block1 .relevants .relevantPeopleList .people .titlePostAndFollow .follow button {
+  width: 62px;
+  height: 29px;
+  border-radius: 15px;
+  border-color: transparent;
+  color: #e44d3a;
+  font-size: 16px;
+  background: white;
+  font-weight: bold;
+  border: solid #e44d3a 2px;
+  transition: all ease-in-out 300ms;
+  cursor: pointer;
+}
+body main .wrapper .block1 .relevants .relevantPeopleList .people .titlePostAndFollow .follow button:hover {
+  border: none;
+  color: white;
+  background: #e44d3a;
+  transition: all ease-in-out 300ms;
+}
+body main .wrapper .block2 {
+  flex: 3;
+}
+body main .wrapper .block2 .feed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body main .wrapper .block2 .feed .createTwett {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 159px;
+  width: 100%;
+}
+body main .wrapper .block2 .feed .createTwett .twetInputWithSend {
+  background: white;
+  width: 83%;
+  box-shadow: 1px 2px 4px #d0cece;
+  border-radius: 6px 6px 0px 0px;
+}
+body main .wrapper .block2 .feed .createTwett .twetInputWithSend .sendTweet {
+  display: flex;
+  height: 79px;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+body main .wrapper .block2 .feed .createTwett .twetInputWithSend .sendTweet .containerImg {
+  width: 12%;
+  display: flex;
+  display: flex;
+  justify-content: center;
+}
+body main .wrapper .block2 .feed .createTwett .twetInputWithSend .sendTweet .containerImg .imgPerfil {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  border-radius: 50%;
+}
+body main .wrapper .block2 .feed .createTwett .twetInputWithSend .sendTweet .containerInput {
+  width: 82%;
+  display: flex;
+  justify-content: flex-end;
+}
+body main .wrapper .block2 .feed .createTwett .twetInputWithSend .sendTweet .containerInput input {
+  height: 55px;
+  width: 100%;
+  border: none;
+  border-bottom: #e4e4e4 1px solid;
+  outline: none;
+}
+body main .wrapper .block2 .feed .createTwett .twetInputWithSend .buttonSend {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0px;
+  margin: 0 auto;
+  width: 89%;
+  flex-wrap: wrap;
+}
+body main .wrapper .block2 .feed .createTwett .twetInputWithSend .buttonSend .send {
+  padding: 0 15px;
+}
+body main .wrapper .block2 .feed .createTwett .twetInputWithSend .buttonSend .send button {
+  cursor: pointer;
+  padding: 4px 20px;
+  color: white;
+  background: #e44d3a;
+  font-weight: 600;
+  font-size: 15px;
+  border: none;
+  border-radius: 15px;
+}
+body main .wrapper .block2 .feed .createTwett .twetInputWithSend .buttonSend .send button span {
+  color: white;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  padding: 0 5px 0 0;
+  box-sizing: content-box;
+}
+body main .wrapper .block2 .feed .createTwett button {
+  border: none;
+  background: none;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  transition: background-color 300ms ease-in-out;
+}
+body main .wrapper .block2 .feed .createTwett button span {
+  color: #e44d3a;
+}
+body main .wrapper .block2 .feed .createTwett .bntImage:hover button, body main .wrapper .block2 .feed .createTwett .bntEmoticon:hover button, body main .wrapper .block2 .feed .createTwett .bntFile:hover button {
+  cursor: pointer;
+  background: #e44d3a52;
+  transition: background-color 300ms ease-in-out;
+}
+body main .wrapper .block2 .feed .createTwett .btnIcons {
+  width: 13%;
+  display: flex;
+  justify-content: space-between;
+}
+body main .wrapper .block2 .feed .listFeed {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: FLEX-START;
+}
+body main .wrapper .block2 .feed .listFeed article {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 6px 8.5%;
+  width: 90%;
+}
+body main .wrapper .block2 .feed .listFeed article .itemContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background: white;
+  height: 90%;
+  padding: 15px;
+  box-shadow: 1px 2px 4px #d0cece;
+  border-radius: 4px;
+}
+body main .wrapper .block2 .feed .listFeed article .itemContainer .containerImg {
+  display: flex;
+  justify-content: center;
+  padding: 18PX 10PX;
+}
+body main .wrapper .block2 .feed .listFeed article .itemContainer .containerImg .imgPerfil {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  border-radius: 50%;
+}
+body main .wrapper .block2 .feed .listFeed article .itemContainer .item {
+  flex: 1;
+}
+body main .wrapper .block2 .feed .listFeed article .itemContainer .item .titlePost {
+  display: inline-block;
+}
+body main .wrapper .block2 .feed .listFeed article .itemContainer .titlePost h3 {
+  font-size: 15px;
+}
+body main .wrapper .block2 .feed .listFeed article .itemContainer .titlePost h3 span {
+  color: grey;
+  font-weight: 200;
+  font-size: 15px;
+}
+body main .wrapper .block2 .feed .listFeed article .itemContainer .tweet {
+  padding: 7px 0;
+}
+body main .wrapper .block2 .feed .listFeed article .itemContainer .tweet p {
+  font-size: 14px;
+  border-bottom: #e4e4e4 1px solid;
+  padding: 0 0 7px;
+}
+body main .wrapper .block2 .feed .listFeed article .itemContainer .btnTweet {
+  display: flex;
+  justify-content: space-between;
+  width: 93px;
+}
+body main .wrapper .block2 .feed .listFeed article .itemContainer .btnTweet .commentAndLike {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  width: 40px;
+  justify-content: space-between;
+}
+body main .wrapper .block2 .feed .listFeed article .itemContainer .btnTweet .commentAndLike span {
+  display: inline-block;
+  padding: 0 2px 0 4PX;
+  font-size: 11pt;
+}
+body main .wrapper .block2 .feed .listFeed article .itemContainer .btnTweet .commentAndLike:hover span {
+  color: #e44d3a;
+}
+
+/*# sourceMappingURL=style.css.map */
